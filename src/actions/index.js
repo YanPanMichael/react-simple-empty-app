@@ -32,7 +32,7 @@ export const updateSomeStatusByThunk = (para) => dispatch => {
 }
 //this.props.dispatch(updateSomeStatusByThunk(value))
 
-export const updateSomeStatusByThunk = (id) => dispatch => {
+export const fetchData = (id) => dispatch => {
     let url = `/aaa/bbb?ccc=json&_id=${id}&source=xxx`;
     fetch(url).then(response => {
         return response.json();
@@ -41,7 +41,7 @@ export const updateSomeStatusByThunk = (id) => dispatch => {
         let list = data.results.list.slice(0, 10);
         let arraylist = [jsonVar, ...list];
         dispatch({
-            type: LOADSUCCESS,
+            type: 'LOADSUCCESS',
             arraylist
         });
     }).catch(err => {
