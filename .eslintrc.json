@@ -91,7 +91,10 @@
         "no-mixed-spaces-and-tabs": 0, //禁止混用tab和空格
         "prefer-arrow-callback": 0, //比较喜欢箭头回调
         "arrow-parens": 0, //箭头函数用小括号括起来
-        "arrow-spacing": 0 //=>的前/后括号
+        "arrow-spacing": 0, //=>的前/后括号
+        "jsx-a11y/label-has-associated-control": 0,
+        "react/jsx-filename-extension": 0,
+        "import/no-extraneous-dependencies": 0
     },
     "settings": {
         "import/ignore": [

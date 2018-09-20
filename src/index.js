@@ -10,8 +10,8 @@ import App from './components/App'
 import registerServiceWorker from './registerServiceWorker'
 
 var middlewares = [thunk];
-if(process.env.NODE_ENV !== 'production') {
-    middlewares.push(createLogger());
+if (process.env.NODE_ENV !== 'production') {
+  middlewares.push(createLogger());
 }
 
 // 柯里化
@@ -19,9 +19,9 @@ if(process.env.NODE_ENV !== 'production') {
 const store = compose(applyMiddleware(...middlewares))(createStore)(rootReducer)
 
 ReactDOM.render(
-    <Provider store={store}>
-        <App />
-    </Provider>,
-    document.getElementById('root')
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root'),
 );
 registerServiceWorker();
