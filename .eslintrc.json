@@ -3,17 +3,20 @@
     "plugins": [
         "react",
         "jsx-a11y",
-        "import"
+        "import",
+        "jasmine"
     ],
     "env": {
         "browser": true,
         "commonjs": true,
-        "es6": true
+        "es6": true,
+        "jasmine": true
     },
     "globals": {
         "$": true,
         "process": true,
-        "__dirname": true
+        "__dirname": true,
+        "jest": true
     },
     "parser": "babel-eslint",
     "parserOptions": {
